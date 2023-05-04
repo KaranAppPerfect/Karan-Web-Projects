@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MpMK1bOdNmHlL1xYtl535Nc2M6Ojh4Vh8zWxzhD/4/WAmo3tdCBg44jiof8reAcIk8pWLMUGDl3cFiA0Epk9wA==",
+  "success": true,
+  "projectFilePath": "/Users/appperfect/Desktop/DbConnect/DbConnect.csproj",
+  "expectedPackageFiles": [
+    "/Users/appperfect/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "/Users/appperfect/.nuget/packages/npgsql/7.0.4/npgsql.7.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

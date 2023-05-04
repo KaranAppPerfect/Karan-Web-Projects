@@ -1,0 +1,90 @@
+﻿@model List<Student>
+@{
+    ViewBag.Title = "Student List";
+}
+
+<div class="card-deck">
+    @foreach (var student in Model)
+    {
+        <div class="card m-3">
+            <div class="card-header">
+                <h3>@student.Name</h3>
+            </div>
+            <img class="card-img-top" src="~/images/image1.jpg" />
+            <div class="card-footer text-center">
+                <div class="card-footer text-center">
+                    <a asp-controller="home" asp-action="details"
+                       asp-route-id="@student.StudentId" class="btn btn-primary m-1">View</a>
+                    <a href="#" class="btn btn-primary m-1">Edit</a>
+                    <a href="#" class="btn btn-danger m-1">Delete</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@* <img src="~/images/image2.jpg" asp-append-version="true" /> *@
+
+@* @model List<Student>
+@{
+    ViewBag.Title = "Student List";
+}
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>View</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.StudentId</td>
+                    <td>@student.Name</td>
+                    <td class="text-center">
+                        <a asp-controller="Home" asp-action="Details" asp-route-id="@student.StudentId" class="btn btn-primary">View</a>
+                    </td>
+                    <td class="text-center"><a href="#" class="btn btn-primary">Edit</a></td>
+                    <td class="text-center">
+                    <a href="#" class="btn btn-danger">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div> *@
+
+
+
+
+
+
+
+@* @{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>Home Page</h1>
+
+@section Scripts {
+    <script src="~/js/CustomJavascript.js" ></script>
+} *@
+
+
+
+
+
+
+@* @{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p> Index view belongs to Views/ Home folder  </p>
+</div> *@

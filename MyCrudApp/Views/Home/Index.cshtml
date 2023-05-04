@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* Tasks
+
+    Create a database and do crud operations  .Net Training    Completed
+    Read                                       Token           Not completed
+
+ *@
+
+ @model MyCrudApp.Models.Task
+
+ <style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <div className="TodoListContainer"> 
+
+        <table>
+            
+            <tr>
+                <th> S.No. </th>
+                <th> Task </th>
+                <th> Deadline </th>
+                <th> Completed </th>
+            </tr>
+
+            <tr>
+                <td> 1. </th>
+                <td> Create a database and do crud operations </th>
+                <td> 23/5/23 </th>
+                <td> Yes </th>
+            </tr>
+
+            <tr>
+                <td> 2. </th>
+                <td> Crud operation on Asp.net web app </th>
+                <td> 30/4/23 </th>
+                <td> No </th>
+            </tr>
+
+        </table>
+
+        
+
+
+    </div>
+    
+</div>
